@@ -6,3 +6,77 @@ html,
 body {
     font-family: 'DM Sans', sans-serif;
 }
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (max-width: 1230px) {
+    .container {
+        max-height: 960px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-height: 730px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-height: 570px;
+    }
+}
+/* Header */
+.site-header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.site-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.site-nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #0f2137;
+    text-decoration: none;
+}
+
+.site-nav-link:last-child {
+    font-weight: 700;
+    color: #28dcb2;
+}
+
+@media (max-width:767px) {
+    .site-header-inner{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .site-nav {
+        gap: 20px;
+    }
+}
+/*Header end */
+.block-hero-inner {
+    display: flex;
+}
+.block-hero-content h1 {
+    font-size: 60px;
+}
